@@ -1,0 +1,31 @@
+Give a brief example of when to use ID (#id) and when to use classes (.class)
+in CSS.
+-----------------------------------------------------------------------------
+You should use ids if you need to refer to that one specific element. This can
+be because of CSS styling, page navigation, indexing, JavaScript, etc. For CSS
+specifically, you could choose to use in-line CSS or add an ID and style it in
+your CSS file(s).
+
+In CSS, classes should be used to target multiple elements for styling.
+There are multiple ways of targeting specific types of elements,
+like selecting span tags inside p tags inside div tags using "div > p > span".
+There are also pseudo classes like :last-child that selects the last child
+element of the parent. If none of those makes sense, you should use a class to
+style the object.
+
+TLDR: In CSS, use ids for very specific and "narrow" styling. Use classes for
+"broader" and less specific styling.
+
+
+What does RGBA mean and what colors can you express with it?
+------------------------------------------------------------
+RGBA is short for red green blue alpha. Alpha specifies the opacity in the
+color. While the R, G, and B can be anything in an octet (0-255), the alpha is
+a decimal between or equal to 0.0 and 1.0. An alpha of 0.0 means fully
+transparent, and an alpha of 1.0 means fully opaque.
+
+
+What CSS selector matches all the p elements inside the article element in the
+following HTML?
+------------------------------------------------------------------------------
+article > p

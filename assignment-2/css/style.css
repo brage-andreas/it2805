@@ -1,0 +1,18 @@
+h1,
+h2,
+h3 {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+body {
+	background-color: #f5fbf5;
+}
+
+p {
+	font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+img {
+	min-width: 150px;
+	border: 1px solid #000000;
+}

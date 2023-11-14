@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Todo</title>
+
+		<style>
+			body {
+				margin: 0 auto;
+				width: 70ch;
+			}
+
+			ul {
+				list-style: none;
+			}
+
+			ul li {
+				font-size: 1.5rem;
+				margin-top: 1rem;
+			}
+
+			ul li:first-child {
+				margin-top: 0;
+			}
+
+			input[type="text"] {
+				border-radius: 0.375rem 0.375rem 0 0;
+				padding: 0.875rem 0.5rem;
+				border: 1px solid black;
+			}
+
+			input[type="submit"] {
+				background-color: black;
+				border-radius: 0 0 0.375rem 0.375rem;
+				padding: 0.875rem 0.5rem;
+				border: none;
+				cursor: pointer;
+				color: white;
+			}
+
+			input[type="checkbox"] {
+				transform: scale(1.75);
+				margin-right: 2ch;
+			}
+
+			.done {
+				text-decoration: line-through;
+			}
+
+			#create-task {
+				display: flex;
+				flex-direction: column;
+			}
+		</style>
+
+		<script src="todo.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<h1>Todo</h1>
+		</header>
+		<main>
+			<form id="create-task">
+				<label for="task-input" style="margin-bottom: 0.5rem">Add a new task</label>
+				<input type="text" name="task-input" id="task-input" placeholder="Buy eggs..." autofocus />
+				<input type="submit" value="Add" />
+			</form>
+
+			<article>
+				<h2>Your current tasks</h2>
+				<p id="task-list-counter">No tasks added</p>
+				<ul id="task-list"></ul>
+			</article>
+		</main>
+	</body>
+</html>

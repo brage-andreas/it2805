@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>A list apart</title>
+		<link rel="stylesheet" href="css/list.css" />
+
+		<style>
+			div.wrapper {
+				display: flex;
+				flex-direction: column;
+
+				min-height: calc(100dvh + 2rem);
+				width: 70ch;
+				margin: auto;
+			}
+
+			footer {
+				min-height: 2rem;
+				margin-top: auto;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>This is a list</h1>
+
+			<ul>
+				<li>HTML</li>
+				<li>
+					CSS
+					<ul>
+						<li>LESS</li>
+						<li>Sass</li>
+						<li>SCSS</li>
+					</ul>
+				</li>
+				<li>
+					JavaScript
+					<ul>
+						<li>React</li>
+						<li>Node</li>
+						<li>Jquery</li>
+						<li>AngularJS</li>
+						<li>Backbone</li>
+						<li>Ember</li>
+						<li>Babel</li>
+					</ul>
+				</li>
+			</ul>
+
+			<footer>This is a footer</footer>
+		</div>
+	</body>
+</html>

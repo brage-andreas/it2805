@@ -1,0 +1,7 @@
+* {
+	list-style: square;
+}
+
+li li:last-of-type {
+	color: darksalmon;
+}

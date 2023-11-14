@@ -1,0 +1,12 @@
+3. What is the difference between position: absolute and position: fixed?
+The difference is that fixed is fixed to the page/viewport, so the element will
+stay in the same place regardless of scrolling. An absolutely positioned
+element will however react to scrolling.
+
+3. With CSS3, how do we access the third element within another element?
+Use the :nth-child pseudo class. <element>:nth-child(3) { ... }
+
+3. What will the CSS snippet at the end of this section do if the visitor is
+browsing on a device with 320 x 568 resolution?
+Without seeing more CSS we can assume the #logo element will be displayed, as
+the media query will not affect the site.

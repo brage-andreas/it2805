@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tax form</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+		<form
+			action="https://folk.ntnu.no/anderobs/webtek/receive_form.php"
+			method="post"
+			style="display: flex; flex-direction: column; gap: 1ch; min-width: 40ch; width: 30dvw"
+		>
+			<div style="flex-direction: row">
+				<label for="name">Real name:</label>
+				<input name="name" type="text" required />
+			</div>
+
+			<div style="flex-direction: row">
+				<label for="gender">Gender:</label>
+
+				<label for="male">Male</label>
+				<input name="gender" type="radio" value="male" />
+				<label for="Female">Female</label>
+				<input name="gender" type="radio" value="female" />
+			</div>
+
+			<div style="flex-direction: row">
+				<label for="email">Email:</label>
+				<input name="email" type="email" required />
+			</div>
+
+			<div style="flex-direction: row">
+				<label for="birthdate">Birthdate</label>
+				<input name="birthdate" type="date" max="1987-12-31" required />
+			</div>
+
+			<div style="flex-direction: row">
+				<label for="hero">Hero name</label>
+				<input name="hero" type="text" required />
+			</div>
+
+			<div style="flex-direction: row">
+				<label for="birthdate">Do you wear spandex?</label>
+				<input name="spandex" type="checkbox" required />
+			</div>
+
+			<div style="flex-direction: row">
+				<label for="strength">Strength</label>
+				<input name="strength" type="number" min="1" max="10" step="1" required />
+			</div>
+
+			<div style="flex-direction: row">
+				<label for="strength">Speed</label>
+				<input name="speed" type="number" min="1" max="10" step="1" required />
+			</div>
+
+			<div style="flex-direction: row">
+				<label for="strength">Intelligence</label>
+				<input name="intelligence" type="number" min="1" max="10" step="1" required />
+			</div>
+
+			<div style="flex-direction: row">
+				<input name="Submit" type="submit" />
+			</div>
+		</form>
+	</body>
+</html>
